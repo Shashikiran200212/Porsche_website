@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import Showcase from "@/components/Showcase";
 import Models from "@/components/Models";
 import Footer from "@/components/Footer";
-import Models1 from "@/components/Models1";
 
 const BounceLoader = () => {
   return (
@@ -40,9 +39,6 @@ export default function Home() {
           <Hero />
           <Showcase />
           <Models/>
-          <div className="hidden">
-            <Models1/>
-          </div>
           <Footer/>
 
         </>

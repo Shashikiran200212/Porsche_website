@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useRef, useEffect } from 'react';
 import BorderGlowButton from './ui/border-glowButton';
-import Link from 'next/link';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
