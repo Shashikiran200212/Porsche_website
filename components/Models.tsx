@@ -3,7 +3,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useRef, useEffect } from 'react';
 import BorderGlowButton from './ui/border-glowButton';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Models: React.FC = () => {
@@ -17,9 +16,11 @@ const Models: React.FC = () => {
         gsap.fromTo(el,
           {
             x: -1000,
+            opacity: 0, // Start with opacity 0 for text elements
           },
           {
             x: 0,
+            opacity: 1, // End with opacity 1 for text elements
             duration: 3,
             ease: 'power2.inOut',
             scrollTrigger: {
@@ -40,11 +41,9 @@ const Models: React.FC = () => {
         gsap.fromTo(el,
           {
             opacity: 0,
-            scale: 0.8 // Added scale animation for a more dynamic effect
           },
           {
             opacity: 1,
-            scale: 1,
             duration: 3,
             ease: 'power2.inOut',
             scrollTrigger: {
@@ -93,19 +92,11 @@ const Models: React.FC = () => {
             <img
               src={row.image}
               alt={row.heading}
-              className='w-full md:w-[40vw] rounded-md  shadow-lg p-2'
+              className='w-full md:w-[40vw] rounded-md shadow-lg p-2'
               ref={el => { if (el) iRefs.current[index] = el; }}
             />
           </div>
         ))}
-        
-        {/* <div className='mb-5 flex justify-center items-center'>
-          <button className="px-3 py-1 md:px-6 md:py-3 h-10 w-48 md:h-auto md:w-auto  text-[11px] md:text-[15px] uppercase font-semibold bg-transparent  border-2 border-black transition-transform  transform hover:scale-110 text-black   duration-200 hover:bg-white hover:text-black  hover:border-white-500">
-            <Link href="/models1">
-                View More
-            </Link>
-          </button>
-        </div> */}
       </div>
     </div>
   );

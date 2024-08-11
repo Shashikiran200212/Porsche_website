@@ -26,7 +26,7 @@ export default function Home() {
 
   useEffect(() => {
     // Simulate a loading delay
-    const timer = setTimeout(() => setLoading(false), 5000); // 2 seconds
+    const timer = setTimeout(() => setLoading(false), 3000); // 3 seconds
 
     // Cleanup function
     return () => clearTimeout(timer);
