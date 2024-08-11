@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div className='h-screen w-full relative overflow-hidden'>
       <video 
-        src="main.webm" 
+        src="main2.webm" 
         className='absolute top-0 left-0 h-full w-full object-cover z-10'
         autoPlay
         loop
@@ -58,8 +58,8 @@ const Hero = () => {
         <h1 className='text-white text-4xl sm:text-5xl md:text-6xl lg:text-9xl uppercase font-sans font-thin mb-4 sm:mb-6 md:mb-8'>
           There is no substitute
         </h1> 
-        <button className="px-6 py-3 uppercase font-semibold bg-transparent  border-2 border-white transition-transform  transform hover:scale-110 text-white   duration-200 hover:bg-white hover:text-black  hover:border-white-500">
-          <a href="https://www.porsche.com/international/models/911/carrera-models/911-carrera-gts/" className='no-underline'>
+        <button className="px-3 py-1 md:px-6 md:py-3 h-10 w-48 md:h-auto md:w-auto  text-[11px] md:text-[15px] uppercase font-semibold bg-transparent  border-2 border-white transition-transform  transform hover:scale-110 text-white   duration-200 hover:bg-white hover:text-black  hover:border-white-500">
+          <a href="https://www.porsche.com/international/models/911/carrera-models/911-carrera-gts/" className='no-underline '>
               Discover the new 911
             </a>
         </button>
