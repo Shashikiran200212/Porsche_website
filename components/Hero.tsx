@@ -23,14 +23,15 @@ const Hero = () => {
 
       {/* Center Porsche text at the top middle */}
       <div className='absolute top-0 left-0 w-full flex justify-center p-3 z-40'>
-        <a href="https://www.porsche.com/international/">
+        <a href="https://www.porsche.com/international/" className='md:block hidden'>
             <h1 className='text-white text-3xl md:text-4xl lg:text-3xl font-thin' style={{ fontFamily: 'PorscheRegular' }}>
               Porsche
             </h1>
         </a>
+        <img src="iconm.png" alt="" className='block md:hidden top-0 left-0 w-10 z-30 '/>
       </div>
 
-      <div className='absolute top-0 left-0 p-4 z-40 transition-transform transform hover:scale-150 md:block hidden'>
+      <div className='absolute top-0 left-0 p-4 z-40 transition-transform transform hover:scale-150 '>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -64,7 +65,7 @@ const Hero = () => {
             </a>
         </button>
         <div className='absolute bottom-0 p-6 z-50 text-white'>
-          <h1 className='font-extralight font-sans text-sm z-40 opacity-70' >Fuel consumption combined: 11.0 - 10.5 l/100 km, CO2-emissions combined WLTP: 251 - 239 g/km, CO2 Class: G</h1>
+          <h1 className='font-extralight font-sans text-[10px] md:text-sm z-40 opacity-70' >Fuel consumption combined: 11.0 - 10.5 l/100 km, CO2-emissions combined WLTP: 251 - 239 g/km, CO2 Class: G</h1>
         </div>
       </div>
     </div>

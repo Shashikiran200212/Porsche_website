@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import Hero from "@/components/Hero";
 import Showcase from "@/components/Showcase";
 import Models from "@/components/Models";
+import Footer from "@/components/Footer";
+import Models1 from "@/components/Models1";
 
 const BounceLoader = () => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white">
       <div className="flex flex-col items-center justify-center space-y-4">
-        <img src="icon.svg" alt="Loading icon" className="w-[500px] h-[500px]" />
+        <img src="icon.svg" alt="Loading icon" className=" w-[300px] h-[300px]  md:w-[500px] md:h-[500px] " />
         <div className="flex items-center space-x-2">
           <div className="h-5 w-5 animate-bounce rounded-full bg-black [animation-delay:-0.3s]"></div>
           <div className="h-5 w-5 animate-bounce rounded-full bg-black [animation-delay:-0.13s]"></div>
@@ -38,6 +40,11 @@ export default function Home() {
           <Hero />
           <Showcase />
           <Models/>
+          <div className="hidden">
+            <Models1/>
+          </div>
+          <Footer/>
+
         </>
       )}
     </main>

@@ -10,9 +10,7 @@
 
     return (
       <div className="w-full h-full py-10 md:py-20 px-4 md:px-6 lg:px-8 bg-white text-black">
-        <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-6 text-center">
-          Get to know your iSad.
-        </h2>
+       
         <Carousel items={cards} />
       </div>
     );

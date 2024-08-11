@@ -2,11 +2,10 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useRef, useEffect } from 'react';
 import BorderGlowButton from './ui/border-glowButton';
-import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Models: React.FC = () => {
+const Models1: React.FC = () => {
   const fRefs = useRef<HTMLDivElement[]>([]);
   const iRefs = useRef<HTMLImageElement[]>([]);
 
@@ -99,16 +98,16 @@ const Models: React.FC = () => {
           </div>
         ))}
         
-        {/* <div className='mb-5 flex justify-center items-center'>
+        <div className='mb-5 flex justify-center items-center'>
           <button className="px-3 py-1 md:px-6 md:py-3 h-10 w-48 md:h-auto md:w-auto  text-[11px] md:text-[15px] uppercase font-semibold bg-transparent  border-2 border-black transition-transform  transform hover:scale-110 text-black   duration-200 hover:bg-white hover:text-black  hover:border-white-500">
-            <Link href="/models1">
+            <a href="" className='no-underline '>
                 View More
-            </Link>
+              </a>
           </button>
-        </div> */}
+        </div>
       </div>
     </div>
   );
 }
 
-export default Models;
+export default Models1;
