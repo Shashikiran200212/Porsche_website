@@ -5,12 +5,13 @@ import Hero from "@/components/Hero";
 import Showcase from "@/components/Showcase";
 import Models from "@/components/Models";
 import Footer from "@/components/Footer";
+import Hero2 from "@/components/Hero2";
 
 const BounceLoader = () => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white">
       <div className="flex flex-col items-center justify-center space-y-4">
-        <img src="icon.svg" alt="Loading icon" className=" w-[300px] h-[300px]  md:w-[500px] md:h-[500px] " />
+        <img src="icon.svg" alt="Loading icon" className="w-[300px] h-[300px] md:w-[500px] md:h-[500px]" />
         <div className="flex items-center space-x-2">
           <div className="h-5 w-5 animate-bounce rounded-full bg-black [animation-delay:-0.3s]"></div>
           <div className="h-5 w-5 animate-bounce rounded-full bg-black [animation-delay:-0.13s]"></div>
@@ -25,22 +26,31 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading delay
-    const timer = setTimeout(() => setLoading(false), 3000); // 3 seconds
+    const hasLoaded = localStorage.getItem("hasLoaded");
 
-    // Cleanup function
-    return () => clearTimeout(timer);
+    if (hasLoaded) {
+      setLoading(false);
+    } else {
+      const timer = setTimeout(() => {
+        setLoading(false);
+        localStorage.setItem("hasLoaded", "true");
+      }, 3000); // 3 seconds
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
-    <main style={{ userSelect: 'none' }} className="bg-white min-h-screen">
-      {loading ? <BounceLoader /> : (
+    <main style={{ userSelect: "none" }} className="bg-white min-h-screen">
+      {loading ? (
+        <BounceLoader />
+      ) : (
         <>
           <Hero />
           <Showcase />
-          <Models/>
-          <Footer/>
-
+          <Models />
+          <Hero2 />
+          <Footer />
         </>
       )}
     </main>
