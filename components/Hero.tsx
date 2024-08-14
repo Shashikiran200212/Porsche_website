@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div className='h-screen w-full relative overflow-hidden'>
       <video 
-        src="main2.webm" 
+        src="main.mp4" 
         className='absolute top-0 left-0 h-full w-full object-cover z-10'
         autoPlay
         loop

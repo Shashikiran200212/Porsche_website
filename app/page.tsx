@@ -50,7 +50,11 @@ export default function Home() {
           <Showcase />
           <Sep/>
           <Hero2 />
+          <div className="mt-3">
+          <Sep/>
+          </div>
           <Footer />
+
         </>
       )}
     </main>

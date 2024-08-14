@@ -17,7 +17,7 @@ const navigation = {
 
 const TwoColumnFooter = () => {
   return (
-    <footer aria-labelledby="footer-heading" className="bg-[#252525]  text-gray-700 dark:text-gray-300">
+    <footer aria-labelledby="footer-heading" className="bg-[#252525]  text-gray-300">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -46,8 +46,8 @@ const TwoColumnFooter = () => {
           {/* Navigation Links */}
           <div className="flex flex-col lg:flex-row lg:space-x-16">
             {/* Connect Links */}
-            <div className="space-y-4">
-              <h3 className="text-sm font-semibold leading-6">Connect</h3>
+            <div className="space-y-4 mb-5">
+              <h3 className="text-2xl font-bold leading-6">Connect</h3>
               <div className="space-y-2 flex flex-col">
                 {navigation.connect.map((item) => (
                   <a
@@ -55,7 +55,7 @@ const TwoColumnFooter = () => {
                     href={item.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm leading-6 hover:text-gray-900 dark:hover:text-gray-200"
+                    className="text-sm leading-6 hover:text-gray-400"
                   >
                     {item.name}
                   </a>
@@ -64,13 +64,13 @@ const TwoColumnFooter = () => {
             </div>
             {/* Company Links */}
             <div className="space-y-4">
-              <h3 className="text-sm font-semibold leading-6">Company</h3>
+              <h3 className="text-2xl font-bold leading-6">Company</h3>
               <div className="space-y-2 flex flex-col">
                 {navigation.company.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-sm leading-6 hover:text-gray-900 dark:hover:text-gray-200"
+                    className="text-sm leading-6 hover:text-gray-400"
                   >
                     {item.name}
                   </a>
