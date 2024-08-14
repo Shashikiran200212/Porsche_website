@@ -34,7 +34,7 @@ export default function Home() {
       const timer = setTimeout(() => {
         setLoading(false);
         localStorage.setItem("hasLoaded", "true");
-      }, 3000); // 3 seconds
+      }, 5000); 
 
       return () => clearTimeout(timer);
     }
