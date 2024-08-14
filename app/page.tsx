@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 import Hero from "@/components/Hero";
 import Showcase from "@/components/Showcase";
-import Models from "@/components/Models";
 import Footer from "@/components/Footer";
 import Hero2 from "@/components/Hero2";
+import Sep from "@/components/sep";
 
 const BounceLoader = () => {
   return (
@@ -48,7 +48,7 @@ export default function Home() {
         <>
           <Hero />
           <Showcase />
-          <Models />
+          <Sep/>
           <Hero2 />
           <Footer />
         </>

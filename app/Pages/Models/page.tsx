@@ -72,7 +72,7 @@ const Models: React.FC = () => {
   ];
 
   return (
-    <div className='h-auto w-full text-black flex flex-col justify-start items-center bg-white'>
+    <div className='h-auto w-full text-black flex flex-col justify-start items-center bg-white' style={{ userSelect: "none" }}>
       <div className='mt-7 mb-10 md:mb-36'>
         <h1 className='md:text-4xl text-xl font-bold tracking-wider' style={{ fontFamily: "PorscheRegular" }}>
           Models

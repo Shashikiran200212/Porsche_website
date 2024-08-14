@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Sidebar from './ui/Sidebar'; // Import the Sidebar component
+import Link from 'next/link';
 
 const Hero = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -60,9 +61,7 @@ const Hero = () => {
           There is no substitute
         </h1> 
         <button className="px-3 py-1 md:px-6 md:py-3 h-10 w-48 md:h-auto md:w-auto  text-[11px] md:text-[15px] uppercase font-semibold bg-transparent  border-2 border-white transition-transform  transform hover:scale-110 text-white   duration-200 hover:bg-white hover:text-black  hover:border-white-500">
-          <a href="https://www.porsche.com/international/models/911/carrera-models/911-carrera-gts/" className='no-underline '>
-              Discover the new 911
-            </a>
+            <Link href="/Pages/911Models"> Discover the new 911</Link>
         </button>
         <div className='absolute bottom-0 p-6 z-50 text-white'>
           <h1 className='font-extralight font-sans text-[10px] md:text-sm z-40 opacity-70' >Fuel consumption combined: 11.0 - 10.5 l/100 km, CO2-emissions combined WLTP: 251 - 239 g/km, CO2 Class: G</h1>
