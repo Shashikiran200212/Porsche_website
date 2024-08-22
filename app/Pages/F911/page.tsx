@@ -2,7 +2,7 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <div className="flex flex-col items-center bg-[#f8f8f9] px-4 py-2 h-screen overflow-hidden">
+    <div className="flex flex-col items-center bg-[#f8f8f9] px-4 py-2 h-auto md:h-screen overflow-hidden">
       <h1 className="text-black font-semibold text-4xl sm:text-5xl md:text-6xl mt-4 sm:mt-6 md:mt-0 text-center" style={{ userSelect: "none" }}>
         Ferdinand Alexander Porsche
       </h1>
