@@ -25,7 +25,7 @@ const BounceLoader = () => {
 };
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const hasLoaded = localStorage.getItem("hasLoaded");
