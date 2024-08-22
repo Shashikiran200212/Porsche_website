@@ -22,7 +22,6 @@ const Hero = () => {
 
       <div className='absolute top-0 left-0 h-full w-full bg-black opacity-50 z-20'></div>
 
-      {/* Center Porsche text at the top middle */}
       <div className='absolute top-0 left-0 w-full flex justify-center p-3 z-40'>
         <a href="https://www.porsche.com/international/" className='md:block hidden'>
             <h1 className='text-white text-3xl md:text-4xl lg:text-3xl font-thin' style={{ fontFamily: 'PorscheRegular' }}>
