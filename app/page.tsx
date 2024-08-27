@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import Hero2 from "@/components/Hero2";
 import Sep from "@/components/sep";
 import Features from "@/components/Features";
-import Scroll from "@/components/scroll";
+import SkewScroll from "@/components/SkewScroll";
 
 const BounceLoader = () => {
   return (
@@ -25,7 +25,7 @@ const BounceLoader = () => {
 };
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const hasLoaded = localStorage.getItem("hasLoaded");
@@ -51,7 +51,7 @@ export default function Home() {
           <Hero />
           <Showcase />
           <Features/>
-          <Scroll/>
+          <SkewScroll/>
           <Sep/>
           <Hero2 />
           <div className="mt-3">
